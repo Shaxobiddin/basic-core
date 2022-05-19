@@ -1,0 +1,24 @@
+server:
+  max-http-header-size: 20MB
+  servlet:
+    context-path: /basic-core
+  error:
+    include-message: always
+
+spring:
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+  datasource:
+    url: jdbc:postgresql://localhost:5432/basic_core
+    username: postgres
+    password: 123456
+    driverClassName: org.postgresql.Driver
+
+openapi:
+  title: Basic Core API
+  version: v3
+  description: Basic Core API
+
